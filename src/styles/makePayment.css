@@ -1,0 +1,65 @@
+.input-gen {
+	border-left: 1px solid #025583;
+    border-radius: 3px;
+    border-bottom: 1px solid #025583;
+}
+
+.line {
+	display: none;
+}
+
+#form-container {
+	width: calc(100% - 60px);
+    padding: 30px;
+    position: relative;
+	top: 0;
+	max-width: 450px;
+    margin: 0 auto;
+}
+
+.rave-payment {
+	max-width: 300px;
+}
+
+.rave-payment span .payButton {
+	width: 140px;
+    max-width: 140px;
+    background: #025583;
+    margin-top: 45px;
+    height: 40px;
+}
+
+.rave-payment span .payButton:hover {
+	background: #003a5a
+}
+
+.flutterwave-secure-logo {
+	margin: 0 auto;
+    width: 300px;
+    height: auto;
+    display: inherit;
+    position: relative;
+    top: 40px;
+}
+
+
+@media only screen and (max-width: 450px) {
+	#form-container {
+		padding-top: 0;
+	}
+	
+	.flutterwave-secure-logo {
+	    width: 200px;
+	    top: 10px;
+	}
+
+	.page-body {
+		position: relative;
+		top: 0px;
+		transition: all .2s ease-in-out;
+	}
+
+	.page-body.slide-down {
+		top: 65px;
+	}
+}

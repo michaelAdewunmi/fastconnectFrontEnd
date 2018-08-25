@@ -1,0 +1,139 @@
+.body-div {
+	background: #d7dfff;
+
+}
+
+.content-div.home {
+	background: #d7dfff;
+	height: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.content-wrapper-home {
+	position: relative;
+	top: -50px;
+}
+
+.home-logo {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	position: relative;
+    left: 30px;
+    transform: scale(0.1);
+    transition: all .5s cubic-bezier(0.4, 0, 0, 1.76);
+    margin-bottom: 20px;
+}
+
+#svg-container svg {
+	opacity: 1;
+}
+
+.brandname {
+	width: 500px;
+	opacity: 0;
+	transform: translateX(-160px);
+    transition: all .4s cubic-bezier(0.4, 0, 0, 1.76);
+    transition-delay: 2.5s;
+}
+
+h1.home-heading {
+	color: #025583 !important;
+	font-weight: 300;
+	opacity: 0;
+	transform: scale(0.1);
+    transition: all .5s cubic-bezier(0.4, 0, 0, 1.76);
+    transition-delay: 2.7s;
+}
+
+.home-links {
+	height: 20px;
+	border: 1px solid #025583;
+    border-radius: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    margin-top: 30px;
+    display: inline-block;
+    margin-right: 30px;
+    transition: all .5s cubic-bezier(0.4, 0, 0, 1.76);
+    transform: scale(1);
+    background: transparent;
+    color: #025583;
+    font-weight: 400;
+}
+
+.home-links:hover {
+	background: #025583;
+	border: 1px solid #025583;
+	color: #fff;
+	transform: scale(1.1);
+}
+
+@media only screen and (max-width: 580px) {
+	.home-logo {
+		width: 200px;
+		height: 200px;
+	}
+
+	.brandname {
+		width: 250px;
+	}
+
+	.home-heading {
+		font-size: 2.5em;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.home-logo {
+		width: 200px;
+		height: 200px;
+		left: 15px;
+	}
+
+	.brandname {
+		width: 150px;
+	}
+
+	.home-heading {
+		font-size: 2em;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.home-heading {
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 270px) {
+	.home-logo {
+		width: 100%;
+		left: 15px;
+		height: 150px;
+		margin-bottom: 0;
+	}
+
+	.brandname {
+		width: 100%;
+	}
+
+	.home-heading {
+		font-size: 0.7em;
+	}
+	
+	.home-links {
+		width: calc(90% - 80px);
+	}
+
+	.home-links.register {
+		padding-bottom: 28px;
+	}
+}

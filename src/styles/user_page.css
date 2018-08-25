@@ -1,0 +1,540 @@
+.user-header-wrapper {
+	z-index: 1
+}
+
+.center-header-info {
+    z-index: 2;
+}
+
+.flex {
+	display: flex;
+}
+
+.padded {
+	padding: 30px;
+}
+.padded-sm {
+	padding: 20px;
+}
+.icon-large {
+	width: 52px;
+    height: 52px;
+}
+
+.content-div {
+	background: #eaf8ff;
+	width: 100%;
+	padding: 0;
+	position: relative;
+}
+
+.user-info {
+	position: relative;
+	top: 0;
+	width: 85%;
+	margin: 0 auto;
+	background: transparent;
+	transition: all .3s ease-in-out;
+	user-select: none;
+}
+
+.user-account-details {
+	padding-top: 60px;
+	background: transparent;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 960px;
+    margin: 0 auto;
+    color: #002b42;
+}
+
+.profile-top {
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.card {
+	width: 43%;
+    border-radius: 3px;
+    background: white;
+    margin-bottom: 30px;
+   	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0), 0px 4px 5px 0px rgba(0, 0, 0, 0), 0px 1px 10px 0px rgba(0, 0, 0, 0.02);
+   	border: 2px solid #d8d8d8;
+   	border: 1px solid #e8e8e8
+
+}
+
+.card.profile-section {
+	width: 55%;
+	width: calc(60% - 60px);
+	width: 60%;
+}
+
+.card.account-brief {
+	width: 38%;
+}
+
+.card-section-head {
+	padding-bottom: 15px;
+}
+
+h3.profile {
+	font-weight: 500;
+	font-size: 18px;
+}
+.profile-image.card-section {
+	margin: 0;
+}
+
+.profile-heading-wrapper {
+	margin-left: 15px;
+}
+
+.profile-heading-wrapper span {
+	display: block;
+	font-size: 12px;
+	color: #8c8c8c;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	width: 100%;
+	background: #dadada;
+}
+
+.detail-section{
+	justify-content: space-between;
+}
+
+.info-wrapper {
+	width: 100%;
+	position: relative;
+
+}
+
+.info-wrapper label {
+	color: #888888;
+	font-weight: 300;
+    font-size: 16px;
+    padding-left: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.info-hr {
+	position: absolute;
+}
+
+.hidden {
+	background: #005684;
+	transform: scale(0);
+	transition: all .3s cubic-bezier(1, 0, 0, 1.54);;
+}
+
+.getit .info-wrapper hr.hidden {
+	transform: scale(1);
+}
+
+.half-width {
+	width: 48%;
+}
+
+.btn-wrapper {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.profile-btn {
+    border: none;
+    box-sizing: border-box;
+    background: #025583;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+	width: 120px;
+	height: 30px;
+	right: 30px;
+}
+
+.edit-profile {
+	height: 0;
+	padding: 0;
+	border: none;
+	font-size: 14px;
+	font-family: inherit;
+	position: absolute;
+}
+
+.getit .info-wrapper .edit-profile.full-width-type {
+	width: calc(100% - 10px);
+}
+
+.info-wrapper.half-width input {
+	position: absolute;
+}
+
+.getit .info-wrapper .edit-profile{
+	height: 20px;
+    top: -6px;
+	position: absolute;
+	left: 0;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	padding-top: 5px;
+	border: 1px solid #005684;
+	border-bottom: none;
+	border-radius: 2px;
+	outline: none;
+	color: #005684;
+	transition: all .3s ease-in-out;
+	font-size: 16px;
+}
+
+.save-and-cancel-btns-wrapper {
+	display: none;
+}
+
+.editing .save-and-cancel-btns-wrapper {
+	display: block;
+	position: absolute;
+	z-index: 3;
+}
+
+.getit .info-wrapper {
+	overflow: inherit;
+}
+
+.getit .info-wrapper label {
+	opacity: 0;
+}
+
+.edit-btn.profile-btn.cancel {
+	background: #476779;
+	margin-right: 20px;
+	outline: none;
+}
+
+.overview {
+	margin-left: 10px;
+	justify-content: flex-start;
+}
+
+.overview .tiny-info {
+	margin: 0;
+	margin-left: 4px;
+
+}
+
+.profile-heading-wrapper.overview-section{
+	margin-left: 20px;
+	margin-top: -7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.profile-heading-wrapper.overview-section p {
+	align-self: flex-start;
+	align-self: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #003652;
+}
+
+p .info-complement {
+	display: inline;
+    font-size: 16px;
+    font-weight: 400;
+    color: #003652;
+}
+
+#acct-activity-wrapper {
+	width: 100%;
+	margin-top: 30px;
+}
+
+.acct-activity {
+	width: 100%;
+	height: auto;
+	padding-bottom: 30px;
+}
+
+.rows-wrapper {
+	padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tiny-head {
+	font-size: 12px;
+	font-weight: 300;
+    color: #9a9a9a;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+.acct p {
+	font-weight: 400;
+}
+
+.payment-link {
+	background: transparent;
+    border: 1px solid #025583;
+    color: #025583;
+    padding: 5px 7px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+}
+
+.payment-link:hover {
+	background: #025583;
+    color: white;
+}
+
+.security-information {
+	text-align: center;
+}
+
+.security-information em {
+	display: inline-block;
+	color: #025583;
+    font-size: 12px;
+    max-width: 400px;
+
+}
+
+h3.history-heading {
+	align-self: center;
+    text-transform: uppercase;
+    margin-left: 30px;
+    display: inline-block;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.successful {
+	color: #00d000;
+}
+
+.pending {
+	color: red;
+}
+
+.no-transaction {
+	text-align: center;
+	font-style: italic;
+	font-size: 12px;
+	margin-top: 30px !important;
+	font-weight: 400 !important;
+}
+
+hr.no-margin {
+	margin: 0;
+}
+
+.payment-link.large {
+	border: 1px solid #025583;
+    margin-top: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 13px;
+    background: #025583;
+    color: white;
+}
+
+.payment-link.large:hover {
+	background: transparent;
+	color: #025563;
+	border-color: #025563;
+}
+
+.payment-link.add-funds {
+	background: #00d000;
+	border: 1px solid #00d000;
+}
+
+.payment-link.add-funds:hover {
+	background: transparent;
+	border: 1px solid #00d000;
+	color: #00d000;
+}
+
+.rows-wrapper.transact-wrapper {
+	align-items: center;
+	justify-content: center;
+}
+
+.user-profile-internal {
+	width: 100%;
+	justify-content: space-between;
+	user-select: none;
+}
+
+.top-cards {
+	position: relative;
+	width: calc(23% - 40px);
+	border-radius: 3px;
+	padding: 10px 20px 10px;
+}
+
+.top-cards:after {
+    content: '';
+    height: 100%;
+    background: #0000ff;
+    position: absolute;
+    left: 0;
+    width: 2px;
+    top: 0;
+    border-radius: 10px;
+}
+
+.profile.top-head {
+	font-size: 16px;
+    color: #afafaf;
+    font-weight: 400;
+}
+
+.top-span {
+	margin-top: 5px;
+	display: inline-block;
+	font-size: 29px;
+	font-weight: 300;
+}
+
+
+.top-span .complement {
+    font-size: 18px;
+    font-weight: 400;
+    display: inline;
+    position: relative;
+    top: -3px;
+}
+
+@media only screen and (max-width: 930px) {
+	.user-info {
+		width: 97%;
+	}
+}
+
+@media only screen and (max-width: 820px) {
+	p .info-complement {
+		display: block;
+	}
+
+	p .info-complement.inline {
+		display: inline;
+	}
+
+	.profile-heading-wrapper.overview-section p {
+		font-size: 20px;
+	}
+
+	.overview .tiny-info {
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 690px) {
+	p .info-complement {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.user-info {
+	    width: 85%;
+	}
+
+	.card.profile-section, .card.account-brief {
+		width: 100%;
+	}
+
+	p.header-user-name {
+    	font-size: 20px;
+	}
+
+	p.profile-name {
+	    font-weight: 400;
+	    font-size: 14px;
+	}
+	
+	.rows-wrapper {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.acct {
+		display: flex;
+		margin-bottom: 10px;
+	}  
+
+	.acct p {
+	    font-size: 14px;
+	}
+
+	.acct .tiny-head {
+		width: 170px;
+	}
+
+	.payment-link {
+		margin-top: 30px;
+	}
+
+	.user-profile-internal {
+		flex-wrap: wrap;
+	}
+
+	.top-cards {
+		width: calc(48% - 40px);
+	}
+}
+
+@media only screen and (max-width: 450px) {
+
+	.user-account-details {
+	    padding-top: 0;
+	}
+
+	.profile.top-head {
+	    font-size: 14px;
+	}
+
+	.info-wrapper label {
+    max-width: 200px;
+	}
+
+	.user-info {
+		top: -65px;
+	}
+
+	.user-info.slide-down {
+		top: 0px;
+	}
+
+	.single-info {
+	    margin-top: 20px;
+	}
+	.double-info-holder {
+		height: 98px;
+		flex-direction: column
+	}
+
+	.half-width {
+	    width: 100%;
+	}
+
+	.acct {
+		flex-direction: column;
+		margin-top: 20px;
+	}
+}
+

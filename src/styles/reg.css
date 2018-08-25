@@ -1,0 +1,48 @@
+.reg-form-wrapper {
+    width: 100%;
+    max-width:  450px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+.reg-header {
+	padding-top: 15px;
+}
+
+.reg-header .brand-logo{
+	width: 150px;
+	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+.input-cont #input-wrapper {
+	width: 350px;
+	margin: 30px auto;
+	height: 35px;
+
+}
+
+.input-cont .label-gen {
+	position: absolute;
+	top: 6px;
+    font-size: 14px;
+}
+
+.input-cont .label-gen.busy-input {
+	transform: translateY(-20px);
+}
+
+.input-cont #input-wrapper .input-gen {
+	top: -10px;
+	font-size: 16px;
+}
+
+.reg-icon {
+	display: inline-block;
+	position: relative;
+	top: 5px;
+	margin-right: 10px;
+}

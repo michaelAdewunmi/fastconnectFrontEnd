@@ -1,0 +1,118 @@
+#selectwrapper {
+	width: 100%;
+	max-width: 450px;
+	height: 40px;
+	background: transparent;
+	position: relative;
+	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 40px;
+	margin-top: 40px;
+    border-left: 1px solid #025583;
+    border-bottom: 1px solid #025583;
+    border-radius: 4px;
+    padding-left: 20px;
+    color: #025583;
+    user-select: none;
+    cursor: text;
+	
+}
+
+#button {
+	right: 10px;
+	top: 4px;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	padding-bottom: 5px;
+	margin: 0;
+	background: #c6d0f5;
+	padding: 0;
+	cursor: pointer;
+	user-select: none;
+	border: none;
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+}
+
+#button span {
+	position: relative;
+	left: 5px;
+	top: -1px;
+	display: inline-block;
+	color: white;
+	font-weight: 500;
+
+}
+
+#optionsHolder {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	left: -2px;
+	z-index: 50;
+	background: #d7dfff;
+	border: 1px solid #adadad;
+	border-top: none;
+	transform: scaleY(0);
+	transform-origin: left top 0px;
+	transition: all .2s cubic-bezier(0.77, -0.15, 0, 1.21);
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 5px, rgba(0, 0, 0, 0.3) 0px 1px 5px;
+	box-shadow: rgba(2, 85, 131, 0.3) 0px 1px 5px, rgba(2, 85, 131, 0.3) 0px 1px 5px;
+}
+
+.open #optionsHolder {
+	display: block;
+	transform: scaleY(1);
+}
+
+.open #optionsHolder:focus {
+	outline: none;
+}
+
+.options {
+	color: #636363;
+	padding: 10px 0px 10px 20px;
+	cursor: pointer;
+}
+
+.options:hover {
+	background: #c8d3ff;
+}
+
+.options span {
+	display: inline-block;
+}
+
+.line {
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border: none;
+	height: 1px;
+	background: #dedede;
+	transition: all .2s cubic-bezier(0.77, -0.15, 0, 1.21);
+}
+
+#selected {
+	padding-left: 20px;
+	font-size: 20px;
+	font-weight: 100;
+	color: #656565;
+}
+
+.instruction {
+	font-size: 16px;
+	color: #025583;
+	font-weight: 400;
+	height: 40px;
+	vertical-align: middle;
+	padding-top: 8px;
+}
+
+.open .instruction {
+	opacity: 0;
+}

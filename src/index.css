@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", Arial, Helvetica, sans-serif;
+
+}
+
+/*
+The webkit keyframes below is used ti remove the ugly yellow background
+from chrome's autofilled input. Thanks to Thiago coelho for the solution.
+Gotten from css tricks dot com slash snippets slash css slash
+change-autocomplete-styles-webkit-browsers
+*/
+
+@-webkit-keyframes autofill {
+    to {
+        color: #666;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+.modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 19, 31, .5);
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    overflow: hidden;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.loader-wrapper {
+    width: 400px;
+    height: 300px;
+    background: white;
+    align-self: center;
+    border-radius: 4px;
+    background: #6585bb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+    transform: translateY(-80px);
+}
+
+.modal.show .loader-wrapper {
+    transform: translateY(0px);
+}
+
+.loader-wrapper div {
+    display: inline-block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.loading {
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    color: deepskyblue;
+    font-size: 22px;
+    margin: 0;
+    color: #025583;
+}
+span.loading {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.notification-div {
+    height: calc(100vh - 120px); 
+    padding: 60px;
+    background: #eaf8ff;
+}
+.notification-body {
+    font-size: 3em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.btn.var-1 {
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    background: #025583;
+    border-color: #025583;
+    border-radius: 2px;
+    margin-top: 40px;
+}
+
+.btn.var-2 {
+    width: 100%;
+    max-width: 250px;
+    margin: 30px auto;
+    margin-bottom: 0px;
+    padding-top: 12px;
+    padding-bottom: 16px;
+}
+
+.btn.var-1:hover {
+    background: #003c5d;
+}
+
+.reg{
+    padding: 12px 50px 17px 50px;
+    border-right: 1px solid #b7b7b7;
+}
+
+.reg.auth{
+    position: absolute;
+    right: 0;
+    border-right: 1px solid #efefef;
+}
+
+.login:hover{
+	background: #fbfbfb;
+}
+
+.flex-it{
+	display: flex;
+	justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.body-div.flex-it {
+    background: #eaf8ff;
+    height: 500px;
+    min-height: 100vh;
+}
+
+#okta-sign-in.auth-container h2.okta-form-title.o-form-head {
+    color: #025583;
+}
+
+.body-div h1{
+    margin: 0;
+}
+
+.content-div{
+    width: calc(90% - 80px);
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.content-div h1, .content-div h2, .content-div h3,
+.content-div h4, .content-div h5, .content-div h6,
+.content-div p {
+    margin: 0;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+h3, .content-div h3{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+
+.icon.input-icon.custom {
+    width: 14px !important;
+    height: 14px !important;
+    position: absolute !important;
+    top: 50% !important;
+    margin-top: -6px !important;
+}
+
+.authenticated-links{
+    display: inline;
+}
+
+#registration-wrapper {
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+
+.registration-label, .registration-link {
+    font-size: 11px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.registration-link {
+    font-family: inherit;
+    cursor: pointer;
+    width: 280px;
+    margin: 0 auto;
+    height: 34px;
+    background-color: #96003e;
+    background: linear-gradient(#f50065, #dc005b);
+    box-shadow: rgba(0, 0, 0, 0.15) 0 1px 0, rgba(255, 255, 255, 0.1) 0 1px 0 0 inset;
+    color: white;
+    border-radius: 3px;
+    padding-top: 18px;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid #8a0039;
+}
+
+.registration-label {
+    color: #777;
+}
+
+.register-div{
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 0 rgba(175, 175, 175, 0.12);
+    box-shadow: 0 2px 0 rgba(175, 175, 175, 0.12);
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    border: 1px solid;
+    border-color: #ddd #ddd #d8d8d8;
+    padding: 30px 20px;
+}
+
+.error-page{
+    margin-top: 30px;
+}
+
+#okta-sign-in.auth-container.main-container{
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+#okta-sign-in.auth-container .okta-form-input-field {
+    background-color: transparent !important;
+}
+
+#okta-sign-in {
+    overflow: hidden !important;
+}
+
+.registration-hr{
+    position: relative;
+    width: 140%;
+    margin: 20px auto;
+    margin-left: -60px;
+    margin-right: -60px;
+    border: none;
+    height: 1px;
+    background: #ddd;
+}
+
+#okta-sign-in .o-form-theme {
+    padding: 0 !important;
+}
+
+#okta-sign-in .auth-org-logo {
+    max-height: 100px !important;
+}
+
+#okta-sign-in .auth-header {
+    padding: 10px 90px 75px !important;
+    padding-bottom: 20px !important;
+}
+
+.o-form-button-bar{
+    padding: 20px !important;
+}
+
+#okta-sign-in .auth-footer{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#okta-sign-in.auth-container .button-primary {
+    background: linear-gradient(#005b8e, #025583) !important;
+}
+
+@media only screen and (max-width: 600px) {
+      .body-div, .body-div.flex-it {
+        background: #eaf8ff !important;
+    }
+    
+    #okta-sign-in{
+        width: 100%;
+        min-width: auto !important;
+    }
+   .register-div {
+        background: transparent;
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+    #okta-sign-in.auth-container .okta-sign-in-header {
+        border: none !important;
+    }
+    #registration-wrapper{
+        width: 100%;
+    }
+    .registration-hr {
+        display: none;
+    }
+    #okta-sign-in.auth-container.main-container {
+        background-color: transparent !important;
+    }
+
+    #input41 {
+        background: transparent;
+    }
+}
+
+
+@media only screen and (max-width: 380px) {
+   #okta-sign-in .okta-sign-in-header.auth-header {
+        padding: 30px 0px 75px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .registration-link {
+        width: 200px;
+        padding-bottom: 18px;
+    }
+    #okta-signin-submit{
+    font-size: 12px !important;
+    }
+    #okta-sign-in .auth-org-logo {
+        max-width: 100px !important;
+    }
+}

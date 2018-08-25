@@ -1,0 +1,140 @@
+.admin-content-wrapper {
+	padding-top: 45px;
+	height: auto;
+	min-height: calc(100vh - 220px);
+    padding-bottom: 60px;
+}
+
+.admin-card.card {
+	width: calc(100% - 80px);
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.admin-card .order {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	border-bottom: 1px solid #d5f1ff;
+}
+
+.admin-card .order:last-of-type{
+	border: none;
+}
+
+.admin-card .order p {
+	padding-top: 5px;
+}
+
+.btn.ver-1.admin-btn{
+	margin: 0;
+	border-color: red;
+    color: red;
+    font-size: 14px;
+}
+
+.btn.ver-1.admin-btn:hover{
+	border-color: #00ce00;
+	background: #00ce00;
+	color: #fff;
+}
+
+.admin-heading {
+	font-size: 1em;
+	font-style: italic;
+	padding-bottom: 30px;
+    border-bottom: 1px solid #d5f1ff;
+} 
+
+.admin-heading.no-content{
+	padding: 0;
+    border: none;
+}
+.data-info {
+    margin-bottom: 40px !important;
+    padding: 5px 0px 7px 10px;
+   cursor: text;
+    border-radius: 3px;
+}
+
+.network-info-heading {
+	margin-bottom: 30px !important;
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.mtn {
+	background: #fdffc4;
+	border-left: 1px solid #decd03;
+    border-bottom: 1px solid #f7e400;
+   /* background: #ffe500;
+    border-left: 1px solid #decd03;
+    border-bottom: 1px solid #f7e400;
+    color: black;*/
+}
+
+.mtn-head {
+	color: #ffe500;
+}
+
+.airtel-head {
+	color: #FF5722;
+}
+
+.glo-info {
+	color: green;
+}
+
+.airtel {
+	background: #ffdac4;
+    border-left: 1px solid #FF5722;
+    border-bottom: 1px solid #FF5722;
+}
+
+.glo {
+	background: #d5ffc4;
+    border-left: 1px solid #4CAF50;
+    border-bottom: 1px solid #4CAF50;
+}
+
+.network-data-wrapper.card{
+	display: flex;
+    justify-content: space-between;
+    width: calc(100% - 60px);
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.info-holder {
+	width: 28%;
+}
+
+.hidden-input {
+	position: absolute;
+    top: 0;
+    padding: 5px 0px 8px 10px;
+    border: none;
+    outline: none;
+    border: 1px solid red;
+    border-top: none;
+    width: 100%;
+    transform: scale(0);
+    transform-origin: 0 0;
+    transition: all .2s ease-in-out;
+    border-radius: 3px;
+}
+
+.show-input .hidden-input {
+	transform: scale(1)
+
+}
+
+.editable-div {
+	position: relative;
+}
+
+.btn.var-1.var-2.href-link {
+    text-decoration: none;
+    text-align: center;
+}
