@@ -1,6 +1,5 @@
 {
   "name": "fastconnect",
-  "proxy": "https://fastconnect.herokuapp.com/",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
