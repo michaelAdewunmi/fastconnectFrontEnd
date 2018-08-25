@@ -5,9 +5,7 @@
   "proxy": {
     "/api": {
       "target": "https://fastconnect.herokuapp.com",
-      "pathRewrite": {
-        "^/api": "/"
-      }
+      "ws": true,
     }
   },
   "dependencies": {
