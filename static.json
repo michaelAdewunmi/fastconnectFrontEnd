@@ -6,6 +6,6 @@
     }
   },
   "routes": {
-    "/**": "default.html"
+    "/**": "index.html"
   }
 }
