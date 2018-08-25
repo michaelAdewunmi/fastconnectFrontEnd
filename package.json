@@ -2,6 +2,7 @@
   "name": "fastconnect",
   "version": "1.0.0",
   "private": true,
+  "proxy": "https://fastconnect.herokuapp.com",
   "dependencies": {
     "@okta/okta-auth-js": "^1.17.0",
     "@okta/okta-react": "^1.0.2",

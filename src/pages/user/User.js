@@ -51,7 +51,7 @@ class User extends Component {
 			return null;
 		}
 		const userEmail= { email: this.state.user.email }
-		fetch(`/api/user/${userEmail.email}`, {
+		fetch(`/user/${userEmail.email}`, {
 			method: 'GET',
 			headers: {
 				'Accept': 'application/json',
