@@ -82,7 +82,7 @@ class User extends Component {
 					oktaRes: user.profile,
 				});
 				this.setUpdate();
-			})
+			}).catch(err=>console.log('Unable to fetch User'))
 		}).catch(err => console.log('Could not get User'));
 	}
 
