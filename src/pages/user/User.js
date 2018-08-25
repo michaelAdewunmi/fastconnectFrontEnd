@@ -66,7 +66,7 @@ class User extends Component {
 					paymentHistory: data.paymentHistory,
 					purchaseHistory: data.purchaseHistory
 				});
-			})
+			}).catch(err=> console.log('Couldn\'t fetch user'))
 		}).catch(err => console.log('There was an Error'));
 		fetch(`${process.env.REACT_APP_OKTA_USER_UPDATE_BASE_URL}${this.state.user.sub}`, {
 			method: 'get',
